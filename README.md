@@ -30,7 +30,7 @@ All the code is located at: `PaddleDetection/ppdet/ghm`.
 | [mmdet](https://github.com/open-mmlab/mmdetection/tree/master/configs/ghm) | R-50-FPN | 12           | 37.0 | [config](https://github.com/open-mmlab/mmdetection/tree/master/configs/ghm/retinanet_ghm_r50_fpn_1x_coco.py) | [model](https://download.openmmlab.com/mmdetection/v2.0/ghm/retinanet_ghm_r50_fpn_1x_coco/retinanet_ghm_r50_fpn_1x_coco_20200130-a437fda3.pth) | [log](https://download.openmmlab.com/mmdetection/v2.0/ghm/retinanet_ghm_r50_fpn_1x_coco/retinanet_ghm_r50_fpn_1x_coco_20200130_004213.log.json) |
 | this                                                         | R-50-FPN | 12           | 37.4 | [config](https://github.com/thisisi3/Paddle-GHM/blob/main/configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml) | [baidu](https://pan.baidu.com/s/1UmUXq6UKZuQhvld9SXXGKg)[ahbr] | [log](https://github.com/thisisi3/Paddle-GHM/blob/main/workerlog.0) |
 
-The experiments are performed on coco 2017 dataset. The training and testing are both done at  [Baidu AIStudio](https://aistudio.baidu.com/aistudio/index). The model is trained on 4 V100 GPUs with 2 images per GPU. 
+The experiments are performed on coco 2017 dataset. The training and testing are both done at Baidu AIStudio. The model is trained on 4 V100 GPUs with 2 images per GPU. 
 
 Please check out the [config](https://github.com/thisisi3/Paddle-GHM/blob/main/configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml) for more information on the model.
 
