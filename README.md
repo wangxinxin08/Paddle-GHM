@@ -54,19 +54,19 @@ PaddleDetection v2.3: follow [this](https://github.com/PaddlePaddle/PaddleDetect
 
 Train GHM on a single GPU:
 
-```python
-python tools/train.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml --eval
+```shell
+python PaddleDetection/tools/train.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml --eval
 ```
 
 Train GHM on multiple GPUs:
 
-```python
+```shell
 python -m paddle.distributed.launch --gpus 0,1,2,3 PaddleDetection/tools/train.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml --eval
 ```
 
 Eval AP of GHM:
 
-```python
+```shell
 python PaddleDetection/tools/eval.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml -o weights=path_to_model_final.pdparams
 ```
 
