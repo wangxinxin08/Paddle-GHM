@@ -44,13 +44,38 @@ NOTICE: official and mmdet are based on Pytorch and MMDetection while this is ba
 
 Requirements: 
 
-python 3.7+
+- python 3.7+
 
-Paddle v2.2: follow [this](https://www.paddlepaddle.org.cn/install/quick) to install
-
-PaddleDetection v2.3: follow [this](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.3/docs/tutorials/INSTALL.md) to install, follow [this](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.3/docs/tutorials/GETTING_STARTED.md) to get started. 
+- Paddle v2.2: follow [this](https://www.paddlepaddle.org.cn/install/quick) to install
 
 
+Clone this repo and install:
+
+```shell
+git clone https://github.com/thisisi3/Paddle-GHM.git
+pip install -e Paddle-GHM/PaddleDetection -v
+```
+
+Follow [this](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.3/docs/tutorials/INSTALL.md) for more details on installation of PaddleDetection, follow [this](https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.3/docs/tutorials/GETTING_STARTED.md) to learn how to use PaddleDetection. 
+
+Data preparation:
+
+```shell
+cd Paddle-GHM
+
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/zips/val2017.zip
+
+mkdir dataset
+mkdir dataset/coco
+
+unzip annotations_trainval2017.zip -d dataset/coco
+unzip train2017.zip -d dataset/coco
+unzip val2017.zip -d dataset/coco
+```
+
+You can also go to [aistudio](https://aistudio.baidu.com/aistudio/datasetdetail/7122) to download coco 2017 if official download is slow.
 
 Train GHM on a single GPU:
 
