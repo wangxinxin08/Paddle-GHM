@@ -95,6 +95,22 @@ Eval AP of GHM:
 python PaddleDetection/tools/eval.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml -o weights=path_to_model_final.pdparams
 ```
 
+Quick demo:
+
+PaddleDetection comes with a inference script that allows us to visualize detection results. I provide an example image at `demo/` and by running the following command we can visualize detection results of GHM on the image:
+
+```shell
+python PaddleDetection/tools/infer.py -c configs/retinanet_ghm_r50_fpn_1x_coco_2x4GPU.yml -o weights=path_to_model_final.pdparams --infer_img demo/000000371552.jpg --output_dir demo/out/ --draw_threshold 0.6
+```
+
+The example image:
+
+![](https://github.com/thisisi3/Paddle-GHM/blob/main/demo/000000371552.jpg?raw=true)
+
+Add detection bboxes:
+
+![](https://github.com/thisisi3/Paddle-GHM/blob/main/demo/out/000000371552.jpg?raw=true)
+
 
 
 ## Acknowledgement 
