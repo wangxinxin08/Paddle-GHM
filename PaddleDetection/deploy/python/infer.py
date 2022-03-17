@@ -46,6 +46,7 @@ SUPPORT_MODELS = {
     'GFL',
     'PicoDet',
     'CenterNet',
+    'RetinaNet'
 }
 
 
